@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-18T15:56:47.485Z",
+    "end": "2021-06-18T15:56:56.585Z",
+    "duration": 6507,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "45873540-5fd9-4e04-836a-1a81d0a66403",
+      "title": "",
+      "fullFile": "cypress/integration/ship.product.and.remove.spec.js",
+      "file": "cypress/integration/ship.product.and.remove.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f0dc95a-7dc1-432c-9d93-8b299f244b0e",
+          "title": "Shiping new product and remove from the ship ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Frenchie Store",
+              "fullTitle": "Shiping new product and remove from the ship  Frenchie Store",
+              "timedOut": null,
+              "duration": 3457,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get(':nth-child(1) > .mfProducts-MuiPaper-root > .mfProducts-MuiCardHeader-root > .mfProducts-MuiCardHeader-action > .mfProducts-MuiButtonBase-root > .mfProducts-MuiIconButton-label > .mfProducts-MuiSvgIcon-root > path').click();\ncy.get('.frenchieStoreHost-MuiBadge-root > .frenchieStoreHost-MuiSvgIcon-root').click();\ncy.get(':nth-child(4) > .mfCart-MuiButtonBase-root > .mfCart-MuiIconButton-label > .mfCart-MuiSvgIcon-root').click();\ncy.get('.mfCart-MuiAlert-message').contains('Successfully deleted product from cart!');\ncy.screenshot();",
+              "err": {},
+              "uuid": "8fda075b-e32d-4e78-9eb0-89c3630be777",
+              "parentUUID": "5f0dc95a-7dc1-432c-9d93-8b299f244b0e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8fda075b-e32d-4e78-9eb0-89c3630be777"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3457,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ab5ee30d-724a-44c3-b0ae-c64e48db21ab",
+      "title": "",
+      "fullFile": "cypress/integration/ship.product.spec.js",
+      "file": "cypress/integration/ship.product.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8831690d-201d-478d-bcf8-a6a01f61283c",
+          "title": "Shiping new product ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Frenchie Store",
+              "fullTitle": "Shiping new product  Frenchie Store",
+              "timedOut": null,
+              "duration": 3050,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get(':nth-child(1) > .mfProducts-MuiPaper-root > .mfProducts-MuiCardHeader-root > .mfProducts-MuiCardHeader-action > .mfProducts-MuiButtonBase-root > .mfProducts-MuiIconButton-label > .mfProducts-MuiSvgIcon-root > path').click();\ncy.get('.frenchieStoreHost-MuiBadge-root > .frenchieStoreHost-MuiSvgIcon-root').click();\ncy.get('.mfCart-MuiTableBody-root > .mfCart-MuiTableRow-root > :nth-child(1)').contains('Blue Shirt');\ncy.get('.mfCart-MuiTableBody-root > .mfCart-MuiTableRow-root > :nth-child(2)').contains('$25.99');\ncy.screenshot();",
+              "err": {},
+              "uuid": "622f6fe1-09df-403c-8289-6be0ce00e231",
+              "parentUUID": "8831690d-201d-478d-bcf8-a6a01f61283c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "622f6fe1-09df-403c-8289-6be0ce00e231"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3050,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "pague-menos",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "reportFilename": "pague-menos",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

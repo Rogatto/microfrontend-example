@@ -1,0 +1,10 @@
+{"baseUrl": "http://localhost:3000",
+ "reporter": "mochawesome",
+ "reporterOptions": {
+    "reportDir": "cypress/reports/separate-reports",
+    "reportFilename": "pague-menos",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
+}
